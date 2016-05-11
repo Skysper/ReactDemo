@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearning", "ReactLearning\ReactLearning.csproj", "{10A4DE44-B10B-4FAA-9A55-F5757800CC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactLearning.Tests", "ReactLearning.Tests\ReactLearning.Tests.csproj", "{3F8CB105-25EC-43CB-9417-291991F19E30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10A4DE44-B10B-4FAA-9A55-F5757800CC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A4DE44-B10B-4FAA-9A55-F5757800CC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A4DE44-B10B-4FAA-9A55-F5757800CC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A4DE44-B10B-4FAA-9A55-F5757800CC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8CB105-25EC-43CB-9417-291991F19E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8CB105-25EC-43CB-9417-291991F19E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8CB105-25EC-43CB-9417-291991F19E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8CB105-25EC-43CB-9417-291991F19E30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

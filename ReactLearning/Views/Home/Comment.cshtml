@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Comment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content"></div>
+<script type="text/javascript">
+    var urlConfig = {
+        list:"@Url.Action("List","Comment")",
+        save:"@Url.Action("Add","Comment")"
+    }
+</script>
+<script type="text/babel" src="~/Content/commentBox.js"></script>
+
+

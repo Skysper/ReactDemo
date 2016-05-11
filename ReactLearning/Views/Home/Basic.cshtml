@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Basic";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Basic</h2>
+<div id="example"></div>
+<div id="example2"></div>
+<!-- 直接render -->
+<script type="text/babel">
+    ReactDOM.render(
+    <h1>Hello,world!</h1>,
+    document.getElementById('example')
+    );
+</script>
+<!-- 标签封装 render -->
+<script type="text/babel">
+    var CommentBox=React.createClass(
+    {
+    render:function()
+    {
+    return (
+    <div className="commentBox">
+        Hello,world! I am a CommentBox.
+    </div>);
+    }
+    });
+    ReactDOM.render(
+    <CommentBox />,
+    document.getElementById('example2')
+    );
+</script>
+
+
+
+

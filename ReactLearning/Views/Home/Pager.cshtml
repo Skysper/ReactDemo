@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Pager";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pager</h2>
+
+<div id="content"></div>
+<script type="text/javascript">
+    var urlConfig = {
+        list:"@Url.Action("PagedList","Comment")"
+    }
+</script>
+<script type="text/script" src="~/Content/Loading.partial.js"></script>
+<script  type="text/babel" src="~/Content/Pager.js"></script>
