@@ -1,4 +1,22 @@
-﻿var Pager=React.createClass({
+﻿var LoadPartial = React.createClass({
+    getInitialState:function()
+    {
+        return ({msg:'加载中,请稍后...'});
+    },
+    componentDidMount:function()
+    {
+        console.log(this.props.msg);
+        if(this.props.msg)
+        {
+            this.setState({msg:this.props.msg});
+        }
+    },
+    render: function () {
+        return (
+            <div>{this.state.msg}</div>);
+    }
+});
+var Pager=React.createClass({
     componentDidMount:function()
     {
         console.log("pager:mount");
@@ -89,6 +107,12 @@ var PageContent=React.createClass({
 }
 });
 
-ReactDOM.render(
+//ReactDOM.render(
+//    (<PageContent pageSize={1}></PageContent>)
+//    ,document.getElementById("content"));
+
+$("#btnReload").bind("click",function(){
+    ReactDOM.render(
     (<PageContent pageSize={1}></PageContent>)
     ,document.getElementById("content"));
+});
